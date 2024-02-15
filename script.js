@@ -1,10 +1,10 @@
 const timestampDiv = document.getElementById("timestamp");
-let startUnixTimestamp = Date.now() / 1000 | 0;
-let startFungiTimestamp = startUnixTimestamp - 1707992306;
-let fungiTimestamp = startFungiTimestamp
+let unixTimestamp = Date.now() / 1000 | 0;
+let fungiTimestamp = unixTimestamp - 1707992306;
 
 setInterval(() => {
-    fungiTimestamp++;
+    unixTimestamp = Date.now() / 1000 | 0;
+    fungiTimestamp = unixTimestamp - 1707992306;
     timestampDiv.innerHTML = fungiTimestamp;
 }, 1000);
 

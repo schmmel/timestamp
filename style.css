@@ -27,3 +27,9 @@ body {
     max-width: 80%;
     text-align: center;
 }
+
+@media screen and (max-width: 500px){
+    #timestamp {
+        font-size: 25vw;
+    }
+}
